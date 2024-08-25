@@ -1,22 +1,28 @@
 const { rawlist, input  } = require('@inquirer/prompts');
+exitWords = ['Quit', 'q']
+let wholeAnswer = []
 
 async function askForShape() {
-    const answer = await rawlist({
+    const answerType = await rawlist({
         message: 'Select a shape',
         choices: [
           { name: 'Square', value: 'square' },
           { name: 'Triangle', value: 'triangle' },
           { name: 'Upside down pyramid', value: 'pyramid' },
           { name: 'Upside down pyramid', value: 'uPyramid' },
+          { name: 'Quit', value: 'quit'}
         ],
+      
       });
-
-    return answer
+         wholeAnswer.push(answerType)
+         console.log(wholeAnswer)
 }
-
 async function askForDimension() {
-    const answer = await input({ message: 'What dimensions should the shape have?' });
-    return answer
+    const answerNo = await input({ message: 'What dimensions should the shape have?' });
+    wholeAnswer.push(answerNo)
+    console.log(wholeAnswer)
 }
+ 
+
 
 module.exports = { askForShape, askForDimension }
