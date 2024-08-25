@@ -1,5 +1,7 @@
+const inputFile = require('./input')
+
 // TODO Add functionality for drawing shapes
-if (answer = traingle){
+if (inputFile.wholeAnswer(1) = triangle){
 function drawTriangle(answerDim) {
     for (let rowCount = 0; rowCount < answerDim; rowCount++) {
         drawTheLine(rowCount)
