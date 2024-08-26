@@ -12,17 +12,18 @@ async function askForShape() {
           { name: 'Upside down pyramid', value: 'uPyramid' },
           { name: 'Quit', value: 'quit'}
         ],
-      
+  
       });
          wholeAnswer.push(answerType)
-         console.log(wholeAnswer)
+         
 }
 async function askForDimension() {
     const answerNo = await input({ message: 'What dimensions should the shape have?' });
     wholeAnswer.push(answerNo)
     console.log(wholeAnswer)
 }
- 
+
+
 
 
 module.exports = { askForShape, askForDimension }

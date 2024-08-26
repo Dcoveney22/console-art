@@ -1,13 +1,12 @@
 const inputFile = require('./input')
 
 // TODO Add functionality for drawing shapes
-if (inputFile.wholeAnswer(1) = triangle){
-function drawTriangle(answerDim) {
-    for (let rowCount = 0; rowCount < answerDim; rowCount++) {
+
+function drawTriangle(dimension) {
+    for (let rowCount = 0; rowCount < dimension; rowCount++) {
         drawTheLine(rowCount)
     }   
 }
-
 function drawTheLine(length) {
     let row = '*'
     for (let starCount = 0; starCount < length; starCount++) {
@@ -15,6 +14,7 @@ function drawTheLine(length) {
     }  
     
     console.log(row)
-}}
+}
+drawTriangle()
 
-drawTriangle(answerDim)
+module.exports = { drawTriangle, drawTheLine }
