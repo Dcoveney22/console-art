@@ -44,7 +44,7 @@ drawTriangle()
 //         row = row + ' *'
 //     }  
 // console.log(row)
-}
+// }
 drawPyramid()    
 
 module.exports = { drawTriangle, drawTheLine, drawPyramid }
