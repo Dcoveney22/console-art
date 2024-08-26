@@ -8,6 +8,7 @@ async function main() {
 
     // TODO Use input to draw shapes
     if (inputFile.askForShape = 'triangle'){
+        console.log('this is going to be a triangle')
         function drawTriangle(height) {
             for (let rowCount = 0; rowCount < height; rowCount++) {
                 drawTheLine(rowCount)
@@ -21,9 +22,9 @@ async function main() {
             
             console.log(row)
         }
-        drawTriangle(dimension)
+       
     }
-        
+       drawTriangle(dimension)  
 }
 
 
