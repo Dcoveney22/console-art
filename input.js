@@ -20,7 +20,7 @@ async function askForShape() {
 async function askForDimension() {
     const answerNo = await input({ message: 'What dimensions should the shape have?' });
     wholeAnswer.push(answerNo)
-    console.log(wholeAnswer)
+    
 }
 
 
