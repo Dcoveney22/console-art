@@ -9,42 +9,63 @@ function drawTriangle(height) {
     }   
 }
 function drawTheLine(length) {
-    let row = '*'
+    let row = ''
     for (let starCount = 0; starCount < length; starCount++) {
         row = row + ' *'
     }  
     
     console.log(row)
 }
-drawTriangle()
+
 
 //======================
+//PYRAMID SHAPE
 
-// function drawPyramid(height) {
-//     for (let rowCount = 0; rowCount < height; rowCount++) {
-//         let line = '';
-//         for (let k = 0; k < (height - rowCount); k++) {
-//             line += ' ';          
-//         }
+function drawPyramid(height) {
+    console.log('thisone')
+    for (let rowCount = 0; rowCount < height; rowCount++) {
+        drawTheLine(rowCount)
+    }   
+}
+function drawTheLine(length) {
+    let row = '  *'
+    for (let starCount = 0; starCount < length; starCount++) {
+        row = row + ' *'
+       
+    }  
+     console.log(row)
+   
+}      
 
-//         for (j = 0; j != (2 * rowCount - 1); j++){
-//             line += '*';
-//         }
-//         for (let k = rowCount + 1;  k <= height + 1; k++){
-//             line += ' ';
-//     }
-//     console.log(line)
-// } 
+//UPSIDE DOWN PYRAMID SHAPE
+
+function drawUPyramid(height) {
+    for (let rowCount = 0; rowCount < height; rowCount++) {
+        drawTheLine(rowCount)
+    }   
+}
+function drawTheLine(length) {
+    let row = '*'
+    for (let starCount = 0; starCount < length; starCount++) {
+        row = row + ' *'
+    }  
     
-      
-// }
-// function drawTheLine(length) {
-//     let row = '*'
-//     for (let starCount = 0; starCount < length; starCount++) {
-//         row = row + ' *'
-//     }  
-// console.log(row)
-// }
-drawPyramid()    
+    console.log(row)
+}    
 
-module.exports = { drawTriangle, drawTheLine, drawPyramid }
+//UPSIDE SQUARE SHAPE
+
+function drawSquare(dimension) {
+    //print top line
+    for (let i = 0; i < dimension; i++){
+        let line = " "
+        for (let j = 0; j < dimension; j++) {
+        line += "*  ";
+            
+        }
+        console.log(line)
+
+    }    
+
+}
+module.exports = { drawTriangle, drawTheLine, drawPyramid, drawUPyramid, drawSquare }

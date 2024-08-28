@@ -15,11 +15,17 @@ async function main() {
         artFile.drawTriangle(dimension)
     }
     if(shape == "pyramid"){
-        console.log('this is goiong to be a pyramid')
+        console.log('this is going to be a pyramid')
         artFile.drawPyramid(dimension)
     }
-    else (
-        console.log('this is not valid')
-    )
+    if(shape == "uPyramid"){
+        console.log('this is going to be an upside down pyramid')
+        artFile.drawUPyramid(dimension)
+    }
+    if(shape == "square"){
+        console.log('this is going to be a square')
+        artFile.drawSquare(dimension)
+    }
+   
 }
 main()
